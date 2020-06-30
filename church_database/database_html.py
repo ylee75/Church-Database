@@ -32,9 +32,6 @@ while(notEmpty):
     cont = sheet['H{}'.format(i)].value
     time = sheet['I{}'.format(i)].value
 
-
-
-
     # Print out HTML code
     print('    <tr>')
     # Check for college ministry
