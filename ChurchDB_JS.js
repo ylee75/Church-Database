@@ -52,3 +52,15 @@ function sortTable(n) {
     }
   }
 }
+function CB() {
+  var rows = document.getElementById("myTable").rows;
+  for (var a = 1; a < rows.length; a++) {
+    var churchname = rows[a].cells[0].innerHTML;
+    if (churchname.includes("📖")) {
+      if (rows[a].style.display == "") {
+        rows[a].style.display = "none";
+      } else if (rows[a].style.display == "none") {
+        rows[a].style.display = "";
+      }
+    }
+  }
